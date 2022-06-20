@@ -1,4 +1,4 @@
-.cell{
+.cell {
   border: 2px solid var(--main-light-color);
   border-radius: 5%;
   margin: 5px;
@@ -13,22 +13,35 @@
   background: var(--main-light-color);
   position: relative;
   z-index: 1;
-  transition: .3s;
+  transition: 0.3s;
   &:hover {
-    background:var(--main-background-hover-color);
+    background: var(--main-background-hover-color);
+  }
+  &.cell_2 {
+    width: 150px;
+    height: 150px;
+    font-size: 6rem;
+  }
+  &.cell_6 {
+    width: 80px;
+    height: 80px;
+  }
+  &.cell_8 {
+    width: 60px;
+    height: 60px;
+    font-size: 2.6rem;
   }
 }
-.show{
+.show {
   opacity: 1;
   visibility: visible;
   background: transparent;
   pointer-events: none;
   -webkit-animation: 1s linear rotate;
   animation: 1s linear rotate;
-
 }
 
-.delete{
+.delete {
   opacity: 0;
   visibility: hidden;
   background: transparent;
