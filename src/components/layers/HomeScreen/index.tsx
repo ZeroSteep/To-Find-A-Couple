@@ -7,7 +7,7 @@ export const HomeScreen = () => {
   return (
     <div className="home_screen">
       <div>
-        <h1>Найди Пару</h1>
+        <h1>Найди пару</h1>
         <Menu data={menuOptions} />
       </div>
     </div>
