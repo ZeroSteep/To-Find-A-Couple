@@ -1,0 +1,45 @@
+.cell{
+  border: 2px solid var(--main-light-color);
+  border-radius: 5%;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  font-size: 3rem;
+  color: var(--main-light-color);
+  cursor: pointer;
+  background: var(--main-light-color);
+  position: relative;
+  z-index: 1;
+  transition: .3s;
+  &:hover {
+    background:var(--main-background-hover-color);
+  }
+}
+.show{
+  opacity: 1;
+  visibility: visible;
+  background: transparent;
+  pointer-events: none;
+  -webkit-animation: 1s linear rotate;
+  animation: 1s linear rotate;
+
+}
+
+.delete{
+  opacity: 0;
+  visibility: hidden;
+  background: transparent;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotateY(180deg);
+  }
+
+  to {
+    transform: rotateY(360deg);
+  }
+}

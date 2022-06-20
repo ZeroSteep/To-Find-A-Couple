@@ -1,0 +1,25 @@
+input[type='range'] {
+  margin-left: 10px;
+  width: 250px;
+  height: 60px;
+  overflow: hidden;
+  cursor: pointer;
+  background: transparent;
+  -webkit-appearance: none;
+  &::-webkit-slider-thumb {
+    -webkit-appearance: none;
+      position: relative;
+      height: 30px;
+      width: 30px;
+      margin-top: -10px;
+      background: var(--input-thumb-bg-color);
+      border-radius: 50%;
+      border: 2px solid var(--main-light-color);
+  }
+  &::-webkit-slider-runnable-track {
+    width: 200px;
+    height: 10px;
+    background: var(--main-light-color);
+    border-radius: 8px;
+  }
+}

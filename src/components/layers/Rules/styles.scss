@@ -1,0 +1,16 @@
+.title{
+  h2{
+    color: var(--main-light-color);
+    text-align: center;
+    font-size: 2.3em;
+  }
+}
+.description{
+  color: var(--main-light-color);
+  font-size: 20px;
+  max-width: 600px;
+  margin: 20px;
+    p{
+      line-height: 1.3;
+    }
+}
