@@ -8,9 +8,10 @@ import "./styles.scss";
 import { Results } from "../Results";
 
 export const TableCell = observer(() => {
+  const sizeCell = InputRangeState.getValue();
   const style = {
-    gridTemplateColumns: `repeat(${InputRangeState.getValue()}, 1fr)`,
-    gridTemplateRows: `repeat(${InputRangeState.getValue()}, 1fr)`
+    gridTemplateColumns: `repeat(${sizeCell}, 1fr)`,
+    gridTemplateRows: `repeat(${sizeCell}, 1fr)`
   };
   const grid = BoardStoreState.getState();
 
@@ -41,7 +42,7 @@ export const TableCell = observer(() => {
           </div>
           <div className="board" style={style}>
             {grid.map((itemCell, i) => (
-              <Cell key={i} onClick={handleClick(itemCell, i)} {...itemCell} />
+              <Cell key={i} onClick={handleClick(itemCell, i)} {...itemCell} size={sizeCell} />
             ))}
           </div>
           <Button text="Меню" path="/" />

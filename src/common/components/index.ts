@@ -14,6 +14,7 @@ export interface InputRangeProps {
 }
 
 export interface CellProps {
+  [key: string]: any;
   id: number;
   content: number;
   open: boolean;
